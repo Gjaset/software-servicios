@@ -1,0 +1,67 @@
+.container_hero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+ .title_servicios{
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: -2;
+}
+#text{
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+}
+.description_servicio{
+    font-size: 1.3rem;
+    max-width: 80%;
+    text-align: justify;
+
+} 
+
+.servicios_tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+.tarjeta_servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+    padding: 1rem;
+    backdrop-filter: blur(17px) saturate(200%);
+    -webkit-backdrop-filter: blur(17px) saturate(200%);
+    background-color: rgba(206, 229, 229, 0.599);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.img_servicio{
+    height: 230px;
+    border-radius: 12px;
+}
+.title_servicio_tarjeta{
+    text-align: center;
+    font-size: 2rem;
+}
+.title_servicio_tarjeta a{
+    text-decoration: none;  
+    color: black;
+}
+.title_servicio_tarjeta a:active{
+    text-decoration: none;  
+    color: black;
+}
+.text_servicio{
+    text-align: justify;
+    font-size: 1.3rem;
+    width: 300px;
+    min-height: 100px;
+    max-height: 120px;
+}

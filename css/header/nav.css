@@ -1,0 +1,193 @@
+header{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.contact_whatsappp{
+    height: 50px;
+    gap: 5px;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__menu{
+    width: 100%;
+    height: 70px;
+    padding: 0px 20px;
+}
+.logo{
+    height: 70px;
+    width: 180px;
+}
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+    font-weight: 600;
+}
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    border-radius: 5px;
+    transform: scale(1.1);
+    background: #93e2ff;
+}
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #93e2ff;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 300ms ease;
+    border-radius: 5px;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+
+}
+
+nav ul li ul li a{
+    display: block;
+    color: black;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover{
+    border-radius: 5px;
+    background: #93e2ff;
+    color: #fff;
+    transform: scale(1.2);
+    padding-left: 30px;
+    font-size: 14px;
+}
+.icon__menu{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+
+@media screen and (max-width: 720px){
+
+    nav > ul{
+        flex-direction: column;
+        left: 0;
+        top: 100px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        background-color: #b9ebfc;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav ul li ul{
+        left: 10px;
+    }
+
+    nav > ul > li:hover ul{
+        top: 50px;
+    }
+
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    #label__check{
+        display: block;
+    }
+
+    .icon__menu{
+        width: 50px;
+        display: flex;
+        background-image: url(../../img/svg/menu-svgrepo-com.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover  ;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 200px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    main{
+        margin-top: 158px;
+    }
+}

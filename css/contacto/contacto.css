@@ -1,0 +1,47 @@
+.contacto_tarjeta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tarjeta_contacto {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  backdrop-filter: blur(17px) saturate(200%);
+  -webkit-backdrop-filter: blur(17px) saturate(200%);
+  background-color: rgba(206, 229, 229, 0.599);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.title_contacto_tarjeta {
+  font-size: 2rem;
+  text-align: center;
+}
+.img_ubicacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.img_phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.text_contacto {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.text_contacto a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}

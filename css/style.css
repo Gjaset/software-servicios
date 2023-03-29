@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+main {
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+}
+body {
+  background-color: #b9ebfc72;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.btn_whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.btn_whatsapp_img {
+  height: 60px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+
+}
