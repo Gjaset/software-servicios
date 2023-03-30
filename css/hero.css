@@ -44,6 +44,7 @@
 }
 .img_servicio{
     height: 230px;
+    max-width: 100%;
     border-radius: 12px;
 }
 .title_servicio_tarjeta{

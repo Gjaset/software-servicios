@@ -17,7 +17,7 @@ header{
     width: 100%;
     height: 70px;
     padding: 0px 20px;
-}
+}   
 .logo{
     height: 70px;
     width: 180px;
@@ -65,7 +65,7 @@ nav ul li ul{
     width: 200px;
     display: flex;
     flex-direction: column;
-    background: #93e2ff;
+    background: #c4effe;
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -145,7 +145,7 @@ nav ul li ul li a:hover{
         visibility: hidden;
         display: flex;
         align-items: center;
-        background-color: #b9ebfc;
+        background-color: #d7f5ff;
     }
 
     nav > ul > li > a:hover{
