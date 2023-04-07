@@ -10,18 +10,21 @@
   text-align: center;
   position: initial;
   z-index: -2;
+  animation: tarjeta_servicio 1s ease 0s 1 normal forwards;
 }
 .titulo_lista_detalle {
   font-size: 1.3rem;
   font-weight: 600;
   list-style: none;
   max-width: 100%;
+  animation: tarjeta_servicio 1s ease 0s 1 normal forwards;
 }
 .text_servicio {
   font-size: 1.25rem;
   max-width: 65%;
   text-align: justify;
   z-index: -2;
+  animation: tarjeta_servicio 1s ease 0s 1 normal forwards;
 }
 .item_detalle{
   font-size: 1.5rem;
@@ -33,18 +36,40 @@
   max-height: 300px;
   max-width: 100%;
   border-radius: 0.5rem;
+  animation: tarjeta_servicio 1s ease 0s 1 normal forwards;
 }
 .text_img {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  animation: contenido_servicio 1100ms ease 0s 1 normal forwards;
 }
 .text_servicio_detalle {
   font-size: 1.3rem;
   margin-left: 1rem;
   max-width: 100%;
 }
+.lista_recorridos{
+text-align: center;
+animation: rutas 1100ms ease 0s 1 normal forwards;
+}
+.item_list{
+  margin-bottom: 1rem;
+}
+
+.title_lista{
+  font-size: 2rem;
+}
+.description_lista_text{
+  text-align: left;
+  font-size: 1.3rem;
+}
+.lista_recorridos_text{
+  font-weight: 600;
+  color: black;
+}
+
 @media screen and (max-width: 420px) {
   .img_servicio {
     display: flex;
@@ -85,4 +110,38 @@
   .item_detalle{
     font-size: 1rem;
   }
+}
+
+@keyframes tarjeta_servicio {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes contenido_servicio {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes rutas {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }

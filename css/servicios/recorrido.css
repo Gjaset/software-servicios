@@ -1,0 +1,90 @@
+.container_recorrido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.title_recorrido{
+    font-size: 1.8rem;
+    z-index: -2;
+    animation: tarjeta_servicio 1s ease 0s 1 normal forwards;   
+}
+.servicio_informacion{
+    font-size: 1.6rem;
+    font-weight: 600;
+    animation: contenido_rutas 1100ms ease 0s 1 normal forwards;
+}
+.list_servicio{
+    animation: contenido_rutas 1100ms ease 0s 1 normal forwards;
+}
+.item_servicio{
+    font-size: 1.2rem;
+}
+.informacion_recorrido{
+    animation: contenido_rutas 1100ms ease 0s 1 normal forwards;
+    font-size: 1.2rem;
+    max-width: 70%;
+}
+.ruta, .reto{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.descripcion_ruta{
+
+}
+.informacion_reto{
+
+}
+.item_reto{
+
+}
+.img_recorrido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    max-height: 600px;
+    animation: recorrido_fondo 1s ease 0s 1 normal forwards;
+}
+@media screen and (max-width: 767px) {
+    .img_recorrido{
+        flex-wrap: wrap;
+        max-width: 350px;
+        max-height: 300px;
+    }   
+}
+@keyframes tarjeta_servicio {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes recorrido_fondo {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes contenido_rutas {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

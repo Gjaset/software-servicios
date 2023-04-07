@@ -11,11 +11,13 @@
     text-align: center;
     position: relative;
     z-index: -2;
+    animation: tarjeta_servicio 1s ease 0s 1 normal forwards;
 }
 #text{
     display: flex;
     justify-content: center;
     z-index: -2;
+    animation: tarjeta_servicio 1s ease 0s 1 normal forwards;
 }
 .description_servicio{
     font-size: 1.3rem;
@@ -41,6 +43,10 @@
     background-color: rgba(206, 229, 229, 0.599);
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
+    animation: contenido_hero 1100ms ease 0s 1 normal forwards;
+}
+.tarjeta_contacto{
+    animation: tarjeta_servicio 1s ease 0s 1 normal forwards;
 }
 .img_servicio{
     height: 230px;
@@ -65,4 +71,26 @@
     width: 300px;
     min-height: 100px;
     max-height: 120px;
+}
+@keyframes tarjeta_servicio {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes contenido_hero {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }

@@ -13,6 +13,7 @@
   background-color: rgba(206, 229, 229, 0.599);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
+  animation: tarjeta_contacto 1s ease 0s 1 normal forwards;
 }
 .title_contacto_tarjeta {
   font-size: 2rem;
@@ -44,4 +45,15 @@
   text-decoration: none;
   color: black;
   font-weight: 500;
+}
+@keyframes tarjeta_contacto {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

@@ -16,6 +16,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  animation: btn_whatsapp 1s ease 0s 1 normal forwards;
 }
 .btn_whatsapp_img {
   height: 60px;
@@ -23,4 +24,15 @@ body {
 }
 @media screen and (max-width: 767px) {
 
+}
+@keyframes btn_whatsapp {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
